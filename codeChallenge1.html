@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Challenge 1</title>
+    <style>
+      body {
+        height: 1500px;
+        margin: 0;
+      }
+      .father {
+        display: flex;
+        justify-content: space-between;
+      }
+      .fixedRedBar {
+        background-color: #ff7979;
+        height: 150px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+      }
+      .blueBox {
+        background-color: #7ed6df;
+        width: 70vw;
+        height: 70vh;
+        position: relative;
+        top: 150px;
+      }
+      .whiteTitle {
+        margin: 50px;
+        font-size: 100px;
+        font-weight: bolder;
+        color: white;
+      }
+      .greenBox {
+        background-color: #badc58;
+        position: absolute;
+        height: 60px;
+        width: 180px;
+        top: -30px;
+        right: -90px;
+        z-index: 1;
+      }
+      .yellowBox {
+        background-color: #ffcc00;
+        border: 5px solid grey;
+        box-sizing: border-box;
+        width: 30vw;
+        height: 70vh;
+        top: 150px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="fixedRedBar"></div>
+      <div class="blueBox">
+        <p class="whiteTitle">This is the day one</p>
+        <div class="greenBox"></div>
+      </div>
+      <div class="yellowBox"></div>
+    </div>
+  </body>
+</html>

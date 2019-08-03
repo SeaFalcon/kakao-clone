@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Challenge 3</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .flex {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .buttonBox {
+        background: #7f8c8d;
+        width: 400px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+      }
+      .text {
+        color: white;
+        font-size: 2.5em;
+      }
+      .buttonBox:hover {
+        background: #95a5a6;
+      }
+
+      #nico {
+        border: 5px solid black;
+        transition: transform 0.5s ease-in-out;
+      }
+      #nico:hover {
+        transform: rotate(1.35turn);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="buttonBox">
+        <div class="text">I'm a button</div>
+      </div>
+      <div>
+        <img
+          id="nico"
+          src="https://avatars1.githubusercontent.com/u/3612017?s=460&v=4"
+        />
+      </div>
+    </div>
+  </body>
+</html>

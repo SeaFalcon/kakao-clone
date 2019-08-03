@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      input[required="required"] {
+      }
+      .box:nth-child(3n + 2) {
+      }
+      /* 직계 */
+      .container > .box {
+      }
+
+      /* 형제 */
+      .container + .brother {
+      }
+
+      input[type="submit"] {
+        background-color: aquamarine;
+      }
+
+      input[type="submit"]:hover {
+        background-color: blanchedalmond;
+      }
+
+      input[type="submit"]:focus {
+        background-color: cadetblue;
+      }
+
+      .box:nth-child(2n + 1) {
+        background-color: blueviolet;
+      }
+      .box {
+        background-color: darkolivegreen;
+        height: 200px;
+        width: 200px;
+      }
+
+      a:visited {
+        color: darkolivegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" />
+        <input type="submit" />
+      </div>
+      <a href="#">fake</a>
+    </div>
+  </body>
+</html>
