@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+      integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: #f95759;
+      }
+
+      html,
+      body {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8f7ff;
+        font-family: "Maven Pro", "Open Sans", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+      }
+
+      .main {
+        height: 100%;
+        width: 25%;
+        /* background: #F8F7FF; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .screen__out {
+        height: 90%;
+        width: 85%;
+        background: #f8f8f8;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px 5px #bec4cf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .screen__in {
+        height: 95%;
+        width: 90%;
+        border-radius: 30px;
+        background: #f6f6f6;
+        box-shadow: 8px 8px 8px 8px #f8f8f8 inset;
+      }
+
+      .login__header {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .login__title {
+        font-size: 18px;
+        font-weight: 600;
+        opacity: 0.7;
+      }
+
+      .login__inputs {
+        margin-top: 70px;
+        display: flex;
+        height: 15%;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .login__inputs .login__inputbox {
+        width: 100%;
+        height: 35px;
+        background: #ffffff;
+        border-radius: 8px;
+        border: 1px solid #f2f2f2;
+        color: #d4d4d4;
+        font-weight: 600;
+        font-size: 14px;
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+      }
+
+      .login__remember {
+        margin-top: 15px;
+        display: block;
+        text-align: end;
+        font-weight: 600;
+        opacity: 0.7;
+        font-size: 12px;
+      }
+
+      .login__check {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 12px;
+        opacity: 0.4;
+        display: flex;
+        align-items: center;
+      }
+
+      .login__checkbox {
+        width: 15px;
+        height: 15px;
+        color: red;
+        border: 1px solid grey;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .login__checkbox .check {
+        font-size: 12px;
+      }
+
+      .login__checkword {
+        margin-left: 5px;
+      }
+
+      .login__signbtn {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login__signin {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f95759;
+        color: white;
+        border-radius: 25px;
+        font-size: 14px;
+      }
+
+      .login__or {
+        margin: 30px 5px;
+        font-weight: 600;
+        font-size: 14px;
+        opacity: 0.7;
+      }
+
+      .login__snsbtns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      .login__facebook {
+        width: 46%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #475a95;
+        color: white;
+        border-radius: 25px;
+        font-size: 14px;
+      }
+
+      .login__twitter {
+        width: 46%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #5da1f2;
+        color: white;
+        border-radius: 25px;
+        font-size: 14px;
+      }
+
+      .login__find {
+        margin-top: 20px;
+        margin-left: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50px;
+        font-weight: 600;
+        opacity: 0.7;
+        font-size: 12px;
+      }
+
+      .login__find__account-text {
+        opacity: 0.5;
+      }
+
+      .login__find__password-text {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="screen__out">
+        <div class="screen__in">
+          <section class="login__header">
+            <span class="login__title">Sign in</span>
+          </section>
+          <section class="login__inputs">
+            <div class="login__inputbox">email</div>
+            <div class="login__inputbox">password</div>
+          </section>
+
+          <a href="#" class="login__remember">Forgot Password?</a>
+          <div class="login__check">
+            <div class="login__checkbox">
+              <span class="check">✔</span>
+            </div>
+            <span class="login__checkword">Remember Me</span>
+          </div>
+
+          <section class="login__signbtn">
+            <span class="login__signin">Sign in</span>
+          </section>
+
+          <div class="login__or">OR</div>
+
+          <section class="login__snsbtns">
+            <div class="login__facebook">
+              Facebook
+            </div>
+            <div class="login__twitter">
+              Twitter
+            </div>
+          </section>
+
+          <section class="login__find">
+            <div class="login__find__account">
+              <span class="login__find__account-text">
+                need an account?
+              </span>
+              <a href="#">Sign up</a>
+            </div>
+            <div class="login__find__password">
+              <span class="login__find__password-text">
+                forgot your password?
+              </span>
+              <a href="#">Retrive</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

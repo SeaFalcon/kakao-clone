@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Challenge 6</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+      integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .main {
+        height: 1000px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        background: black;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .product {
+        margin-top: 10px;
+        height: 48%;
+        width: 95%;
+        background: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .product__image {
+        width: 360px;
+        height: 240px;
+      }
+
+      .product__desc {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
+      .product__desc-title {
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .product__desc-content {
+        color: #b8bbc1;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .product__footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 20px;
+      }
+      .product__footer-price {
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .product__footer-stars {
+        color: #febd51;
+        font-size: 16px;
+      }
+      .product__footer-stars .unstar {
+        color: #d8dde6;
+      }
+      .product__footer-stars-number {
+        color: #b8bbc1;
+        font-weight: 600;
+        margin-left: 5px;
+      }
+
+      .profile {
+        margin-bottom: 10px;
+        height: 48%;
+        width: 95%;
+        background: white;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .profile__background__top {
+        height: 240px;
+        width:100%;
+        background-image: url("https://www.metalkingdom.net/album-cover-artwork/2018/07/6/124824-Devin-Townsend-Project-Empath.jpg");
+        background-size: cover;
+      }
+
+      .profile__background__top-picture{
+        background-size: cover;
+        height:240px;
+        width:100%;
+      }
+
+      .profile__contents__image {
+        height: 65px;
+      }
+      .profile__contents__image-pic {
+        border: 5px solid white;
+        border-radius: 50%;
+        width: 150px;
+        position: relative;
+        top: -85px;
+        left: 160px;
+      }
+
+      .profile__contents__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile__contents__info-name {
+        font-weight: 600;
+        font-size: 30px;
+      }
+      .profile__contents__info-desc {
+        color: #b8bbc1;
+        font-size: 20px;
+      }
+
+      .profile__contents__btn {
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .btn-follow {
+        background: #6b75ff;
+        color: #eaecff;
+        border-radius: 5px;
+        border-style: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 20px 60px;
+      }
+      .btn-message {
+        background: #eaecff;
+        color: #6b75ff;
+        border-radius: 5px;
+        border-style: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 20px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="product">
+        <div class="product__header">
+          <img
+            src="https://t1.daumcdn.net/cfile/tistory/213DD44157D759F22B"
+            alt=""
+            class="product__image"
+          />
+        </div>
+        <div class="product__desc">
+          <span class="product__desc-title">Apple AirPods</span>
+          <span class="product__desc-content">
+            Combine intelligent design with breakthrough technology and crystal
+            clear sound.
+          </span>
+        </div>
+        <div class="product__footer">
+          <span class="product__footer-price">$159</span>
+          <span class="product__footer-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star unstar"></i>
+            <span class="product__footer-stars-number">16</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="profile">
+        <div class="profile__background">
+          <div class="profile__background__top">
+            <!-- <img
+              src="https://www.metalkingdom.net/album-cover-artwork/2018/07/6/124824-Devin-Townsend-Project-Empath.jpg"
+              alt=""
+              class="profile__background__top-picture"
+            /> -->
+          </div>
+          <div class="profile__background__bottom"></div>
+        </div>
+
+        <div class="profile__contents">
+          <div class="profile__contents__image">
+            <img
+              src="https://avatars1.githubusercontent.com/u/3612017?s=460&v=4"
+              alt=""
+              class="profile__contents__image-pic"
+            />
+          </div>
+          <div class="profile__contents__info">
+            <span class="profile__contents__info-name">Nicolas</span>
+            <span class="profile__contents__info-desc">Code Master</span>
+          </div>
+        </div>
+
+        <div class="profile__contents__btn">
+          <button class="btn-follow">Follow</button>
+          <button class="btn-message">Message</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
