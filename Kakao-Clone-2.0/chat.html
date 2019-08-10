@@ -14,7 +14,7 @@
     <!-- <script src="https://kit.fontawesome.com/b34467fe6f.js"></script> -->
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
@@ -47,7 +47,7 @@
       </div>
     </header>
 
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019 </span>
         <li class="incoming-message message">
@@ -57,15 +57,45 @@
             class="g-avatar message__avatar"
           />
           <div class="message__content">
-            <span class="message__author">Best Friend </span>
-            <div class="message__bubble">Congrats I love you!</div>
+            <!-- div로 하면 box-shadow 속성이 먹지 않음! -->
+            <span class="message__bubble">
+              Congrats I love you!
+            </span>
+            <span class="message__author">
+              Best Friend
+            </span>
           </div>
-          <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
-            <div class="message__bubble">Thank you see you soon!</div>
+            <span class="message__bubble">
+              Thank you see you soon!
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img
+            src="https://avatars1.githubusercontent.com/u/3612017?s=460&v=4"
+            alt=""
+            class="g-avatar message__avatar"
+          />
+          <div class="message__content">
+            <!-- div로 하면 box-shadow 속성이 먹지 않음! -->
+            <span class="message__bubble">
+              Congrats I love you!
+            </span>
+            <span class="message__author">
+              Best Friend
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              Thank you see you soon!
+            </span>
           </div>
         </li>
       </ul>
@@ -87,7 +117,7 @@
           <i class="far fa-smile-wink"></i>
         </span>
         <span class="chat__write-icon">
-          <i class="far fa-microphone"></i>
+          <i class="fas fa-microphone"></i>
         </span>
       </div>
     </div>
